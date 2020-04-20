@@ -26,6 +26,8 @@ class MainActivity : BaseActivity() {
     override fun setValues() {
         myViewPager.adapter = MyFragPagerAdapter(supportFragmentManager)
 
+        myViewPager.offscreenPageLimit = 5
+
         myTabLayout.setupWithViewPager(myViewPager)
     }
 
